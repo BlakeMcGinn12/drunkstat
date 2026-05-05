@@ -567,6 +567,35 @@ header h1 {
     display: none !important;
 }
 
+/* Waiting Overlay */
+.waiting-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(15, 52, 96, 0.95);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.waiting-content {
+    padding: 30px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.question-card {
+    position: relative;
+}
+
 /* Responsive */
 @media (max-width: 500px) {
     .container {
